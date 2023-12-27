@@ -1,0 +1,62 @@
+@{
+    Layout = "_AdminLayout";
+}
+
+@model SayfaBilgiViewModel
+
+<form action="" method="POST" enctype="multipart/form-data">
+
+    <div class="row">
+
+        <div class="mb-1 col col-3">
+
+            <label class="form-label">Slider Başlık</label>
+            <input type="text" class="form-control" name="SliderBaslik" placeholder="Bir Başlık Giriniz.">
+
+        </div>
+
+        <div class="mb-1 col col-4">
+
+            <label class="form-label">Slider Açıklama</label>
+            <input type="text" class="form-control" name="SliderAciklama" placeholder="Bir Açıklama Giriniz.">
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col col-3">
+
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Resim Seçiniz</label>
+                <input class="form-control" type="file" id="formFile" name="resim">
+            </div>
+
+        </div>
+
+        <div class="col col-3">
+
+            <div class="mb-3">
+
+                <label for="formFile" class="form-label">Şehir Seçiniz</label>
+                <select name="sehirId" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    @foreach (var item in Model.Sehirler)
+                    {
+                        <option value="@item.Id">@item.Sehir</option>
+                    }
+                </select>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <input class="btn btn-outline-primary mt-3 col col-2 mx-5" type="submit" value="Slider Ekle">
+
+    </div>
+
+</form>

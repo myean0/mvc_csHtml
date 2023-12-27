@@ -1,0 +1,61 @@
+@{
+    Layout = "_AdminLayout";
+}
+
+@model gezilecekYerlerTable
+
+<form method="POST" enctype="multipart/form-data">
+
+    <input type="hidden" name="id" value="@Model.id">
+
+    <div class="row">
+
+        <div class="mb-1 col col-3">
+
+            <label class="form-label">Gezilecek Yer Başlık</label>
+            <input type="text" class="form-control" name="gYerAd" value="@Model.gYerAd" required="required"
+                autofocus="autofocus">
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="mb-1 col col-4 mb-5">
+
+            <label class="form-label">Gezilecek Yer Açıklama</label>
+            <textarea id="textareaContent" name="gYerAciklama" cols="30" rows="10"
+                required="required">@Html.Raw(Model.gYerAciklama) </textarea>
+
+        </div>
+
+        <div class="col col-4">
+
+            <div class="mb-3">
+
+                <label class="form-label">Resim</label>
+                <img src="~/img/@Model.gYerResim" class="img-fluid ms-1">
+
+            </div>
+
+            <div class="col col-12 ms-1">
+
+                <input type="hidden" name="gYerResim" value="@Model.gYerResim">
+                <input class="form-control" type="file" id="formFile" name="resim">
+
+                <div class="col col-12">
+
+                    <input class="btn btn-outline-success mt-3 col col-8" type="submit"
+                        value="Gezilecek Yer Güncelle">
+                    <a class="btn btn-outline-warning mt-3" href="/Admin/GYerListele">Geri Dön</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</form>

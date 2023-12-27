@@ -1,0 +1,37 @@
+@{
+    Layout = "_AdminLayout";
+}
+
+@model sehirTable
+
+<form  method="POST" enctype="multipart/form-data">
+
+    <input type="hidden" name="Id" value="@Model.Id">
+
+    <div class="row">
+
+        <div class="mb-1 col col-3">
+
+            <label class="form-label">Şehir Adı</label>
+            <input type="text" class="form-control" name="Sehir" value="@Model.Sehir" required="required"
+                autofocus="autofocus">
+
+        </div>
+
+        <div class="mb-1 col col-4">
+
+            <label class="form-label">Şehir Açıklama</label>
+            <textarea required="required" id="textareaContent" class="form-control" name="SehirAciklama" id="" cols="30" rows="10" placeholder="Bir Metin Giriniz.">@Html.Raw(Model.SehirAciklama)</textarea>
+
+        </div>
+
+    </div>
+
+    <div class="row mb-3">
+
+        <input class="btn btn-outline-success mt-3 col col-2 mx-3" type="submit" value="Şehir Güncelle">
+        <a class="btn btn-outline-warning mt-3" style="width: 100px;" href="/Admin/SehirListele">Geri Dön</a>
+
+    </div>
+
+</form>

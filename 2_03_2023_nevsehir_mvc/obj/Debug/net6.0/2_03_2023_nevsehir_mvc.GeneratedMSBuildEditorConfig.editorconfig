@@ -1,0 +1,101 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = _2_03_2023_nevsehir_mvc
+build_property.RootNamespace = _2_03_2023_nevsehir_mvc
+build_property.ProjectDir = c:\Users\talha\Desktop\2_03_2023_nevsehir_mvc\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = c:\Users\talha\Desktop\2_03_2023_nevsehir_mvc
+build_property._RazorSourceGeneratorDebug = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/Admin/GYerGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR1llckd1bmNlbGxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/Admin/GYerListele.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR1llckxpc3RlbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/Admin/GYerSil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR1llclNpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/Admin/GYerVeriGirisi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR1llclZlcmlHaXJpc2kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/Admin/SehirGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VoaXJHdW5jZWxsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/Admin/SehirListele.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VoaXJMaXN0ZWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/Admin/SehirSil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VoaXJTaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/Admin/SehirVeriGirisi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VoaXJWZXJpR2lyaXNpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/Admin/SliderGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2xpZGVyR3VuY2VsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/Admin/SliderListele.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2xpZGVyTGlzdGVsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/Admin/SliderSil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2xpZGVyU2lsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/Admin/SliderVeriGirisi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2xpZGVyVmVyaUdpcmlzaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/Home/GezilecekYerler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXppbGVjZWtZZXJsZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/Home/SayfaHakkinda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYXlmYUhha2tpbmRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/talha/Desktop/2_03_2023_nevsehir_mvc/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

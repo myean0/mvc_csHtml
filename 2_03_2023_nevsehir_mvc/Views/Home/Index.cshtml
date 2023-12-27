@@ -1,0 +1,115 @@
+@model SayfaBilgiViewModel
+
+<link rel="stylesheet" href="style.css">
+
+<a href="/Admin/Index" class="btn btn-dark btn-outline-light ms-5 mt-5">Admin</a>
+
+<div class="mx-auto p-5">
+
+    <div class="d-flex justify-content-center">
+        <h1 class="display-1 text-danger">Hoşgeldiniz.</h1>
+    </div>
+
+    <div class="d-flex justify-content-center">
+
+        <span class="col col-5 lead text-white text-center p-1">Bu Sayfada <span class="text-info">Nevşehir</span>'i
+            Kendi Memleketiniz Gibi
+            Tanıyacaksınız.</span>
+
+    </div>
+
+</div> 
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+        @{
+            int i = 0;
+        }
+        @foreach (var item in Model.Sehirler)
+        {
+            @foreach (var sliderItem in Model.Sliderlar)
+            {
+                if (item.Id == sliderItem.sehirId)
+                {
+                    <div class='carousel-item @(i<1 ? "active" : " ")' data-bs-interval="2500">
+                        <img src="~/img/@sliderItem.SliderResim" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block kutu kutu">
+                            <h5>@item.Sehir</h5>
+                            <p>@item.AltBaslik</p>
+                        </div>
+                    </div>
+                    i++;
+                }
+
+            }
+
+        }
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="col-md-6 mx-auto text-center my-5 p-5">
+    <div class="row d-flex justify-content-center">
+        <h1 class="display-4 text-success">Nevşehir</h1>
+    </div>
+    <span class="lead text-white">
+        <span class="text-info"><span class="text-info">Nevşehir</span></span>, Türkiye'nin İç Anadolu Bölgesinde yer
+        alan bir ildir.
+
+        <span class="text-info">Nevşehir</span>, Muşkara adlı bir köy iken, şehir halini almaya başlamasından sonra, 18.
+        yüzyılda Osmanlı Türkçesi'nde
+        "yeni kent" anlamına gelen bugünkü adını almıştır.
+
+        <span class="text-info">Nevşehir</span>, 6429 sayılı yasa ile <span class="text-warning">20 Temmuz 1954</span>
+        tarihinde il haline getirildi. Kırşehir ve Kırşehir'e bağlı Mucur,
+        Avanos, Hacıbektaş (1945'te ilçe oldu), Kayseri'ye bağlı Ürgüp (1935'te ilçe oldu), Niğde'ye bağlı Arapsun
+        (1948'de Gülşehir adını aldı) <span class="text-info">Nevşehir</span>'in ilçeleri haline getirildi. Kozaklı ve
+        Hamamorta köyleri Avanos'a bağlı
+        birer köy iken birleştirilerek <span class="text-warning">1954</span>'te Kozaklı adıyla ilçe olarak <span
+            class="text-info">Nevşehir</span>'e bağlandı. Kırşehir <span class="text-warning">1957</span>'de tekrar
+        il yapıldı. Mucur ilçesi ile beraber <span class="text-info">Nevşehir</span>'den ayrıldı. Daha önceleri Melegübü
+        ismi ile anılan bir bucak
+        merkezi olan Derinkuyu, <span class="text-warning">1 Nisan 1960</span>'ta ilçe durumuna getirildi. Acıgöl
+        kasabası ise <span class="text-warning">4 Temmuz 1987</span>'de ilçe
+        olmuştur.
+
+    </span> <br> <br>
+
+    <span class="lead text-white">
+        İllerde protokolde ilk sırada yer alan Vali, merkezi yönetimi temsil eder ve Cumhurbaşkanı tarafından atanır.
+        Büyükşehir dışındaki illerde yerel yönetim, şehirler düzeyindedir. Belediye Başkanı, belediye sınırları içinde
+        kalan seçmenin oy çokluğu ile seçilir. Ayni seçmen İlçe Belediye Meclisi için de oy kullanarak ilçelerin
+        belediye meclislerini oluşturur. İldeki bütün seçmenler ayrıca il genel meclisi için de oy kullanarak, İl Genel
+        Meclisinin oluşumunu sağlarlar.
+    </span> <br> <br>
+
+    <span class="lead text-white">
+        İl genel meclisi ve belediye meclisi üyelikleri için yapılan seçimlerde, onda birlik baraj uygulamalı nispi
+        temsil sistemi, belediye başkanlığı seçiminde ise çoğunluk sistemi uygulanır İl genel meclisi ve belediye
+        meclisi üye sayıları ilçe nüfusuna göre, kontenjandan kalan sayıların partilere dağılımı ise D'Hondt Sistemine
+        göre belirlenir (<span><a
+                href="https://www5.tbmm.gov.tr/tutanaklar/KANUNLAR_KARARLAR/kanuntbmmc067/kanuntbmmc067/kanuntbmmc06702972.pdf"
+                target="_blank" style="text-decoration: none; color: red;">Kanun:2972-Madde:23
+                <i>tıklayınız...</i></a></span>)
+    </span>
+</div>  

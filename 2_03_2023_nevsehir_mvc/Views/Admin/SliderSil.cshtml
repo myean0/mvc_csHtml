@@ -1,0 +1,52 @@
+@{
+    Layout = "_AdminLayout";
+}
+
+@model sliderTable
+
+<form action="" method="POST" enctype="multipart/form-data">
+
+    <div class="row mb-1">
+
+        <div class="mb-1 col col-3">
+
+            <label class="form-label">Slider Başlık</label>
+            <input type="text" class="form-control" name="SliderBaslik" value="@Model.SliderBaslik" required="required"
+                autofocus="autofocus" disabled>
+
+        </div>
+
+        <div class="mb-1 col col-4">
+
+            <label class="form-label">Slider Açıklama</label>
+            <input type="text" class="form-control" name="SliderAciklama" value="@Model.SliderAciklama"
+                required="required" autofocus="autofocus" disabled>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col col-3">
+
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Resim</label>
+                <img src="~/img/@Model.SliderResim" class="img-fluid ms-1">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <form action="/Admin/SliderSil/@Model.Id" method="post">
+            <input class="btn btn-outline-danger mt-3 col col-1 ms-3 me-1" type="submit" value="Slider Sil">
+        </form>
+
+        <a class="btn btn-outline-warning mt-3" style="width: 100px;" href="/Admin/SliderListele">Geri Dön </a>
+
+    </div>
+
+</form>

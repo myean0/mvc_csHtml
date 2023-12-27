@@ -1,0 +1,43 @@
+@{
+    Layout = "_AdminLayout";
+}
+
+@model sehirTable
+
+<form action="" method="POST" enctype="multipart/form-data">
+
+    <div class="row mb-1">
+
+        <div class="mb-1 col col-3">
+
+            <label class="form-label">Şehir Adı</label>
+            <input type="text" class="form-control" name="Sehir" value="@Model.Sehir" required="required"
+                autofocus="autofocus" disabled>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="mb-1 col col-4">
+
+            <label class="form-label">Şehir Açıklama</label>
+            <span style="height: 350px; width: 250px;" class="form-control" name="SehirAciklama" autofocus="autofocus"
+                disabled>@Html.Raw(Model.SehirAciklama)</span>
+
+        </div>
+
+    </div>
+
+    <div class="row mb-3">
+
+        <form action="/Admin/SehirSil/@Model.Id" method="post">
+            <input class="btn btn-outuline-danger mt-3 col col-1 ms-3 me-1" type="submit" value="Şehir Sil">
+        </form>
+
+        <a class="btn btn-outline-warning mt-3" style="width: 100px;" href="/Admin/SehirListele">Geri Dön</a>
+
+    </div>
+
+</form>

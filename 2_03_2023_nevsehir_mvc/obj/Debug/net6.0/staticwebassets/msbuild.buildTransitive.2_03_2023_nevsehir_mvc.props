@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\2_03_2023_nevsehir_mvc.props" />
+</Project>

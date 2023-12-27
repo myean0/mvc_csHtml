@@ -1,0 +1,42 @@
+@{
+    Layout = "_AdminLayout";
+}
+
+<form action="" method="POST" enctype="multipart/form-data">
+
+    <div class="row">
+
+        <div class="mb-2 col col-3">
+
+            <label class="form-label">Şehir Adı</label>
+            <input type="text" class="form-control" name="Sehir" placeholder="Bir Şehir Giriniz.">
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col col-4">
+
+            <label class="form-label">Şehir Açıklama</label>
+            <textarea id="textareaContent" class="form-control" name="SehirAciklama" id cols="30" rows="10" placeholder="Bir Metin Giriniz."></textarea>
+
+        </div>
+
+        <div class="col col-3">
+
+            <label class="form-label">Alt Başlık</label>
+            <input type="text" class="form-control" name="AltBaslik" placeholder="Bir Alt Başlık Giriniz.">
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <input class="btn btn-outline-primary mt-3 col col-3 mx-5 mb-3" type="submit" value="Şehir Ekle">
+
+    </div>
+
+</form>

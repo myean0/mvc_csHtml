@@ -1,0 +1,66 @@
+@{
+    Layout = "_AdminLayout";
+}
+
+@model List<gezilecekYerlerTable>
+
+<form action="" method="POST" enctype="multipart/form-data">
+
+    <div class="row">
+
+        <div class="col col-4 mb-1">
+
+            <label class="form-label">Gezilecek Yer Başlık</label>
+            @foreach (var item in Model)
+            {
+                <input type="text" class="form-control" name="gYerAd" value="@item.gYerAd" required="required"
+                autofocus="autofocus" disabled>
+            }
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="mb-5 col col-4">
+
+            <label class="form-label">Gezilecek Yer Açıklama</label>
+            @foreach (var item in Model)
+            {
+                <textarea name="gYerAciklama" id="textareaContent" cols="30" rows="10"
+                disabled>@Html.Raw(item.gYerAciklama)</textarea>
+            }
+
+        </div>
+
+        <div class="col col-4">
+
+            <div class="mb-3">
+
+                <label for="formFile" class="form-label">Resim</label>
+                @foreach (var item in Model)
+                {
+                    <img src="~/img/@item.gYerResim" class="img-fluid ms-1">
+                }
+
+            </div>
+
+            <div class="col col-12">
+
+                @foreach (var item in Model)
+                {
+                    <form action="/Admin/GYerSil/@item.id" method="post">
+                        <input class="btn btn-outline-danger mt-3 col col-8" type="submit" value="Gezilecek Yer Sil">
+                    </form>
+                }
+
+                <a class="btn btn-outline-warning mt-3" href="/Admin/GYerListele">Geri Dön</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</form>
